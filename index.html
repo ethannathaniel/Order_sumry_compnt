@@ -44,7 +44,7 @@
       width: 400px;
       background-color: white;
       display: grid;
-      grid-template-rows: auto auto auto auto;
+      grid-template-rows: auto auto;
       border-radius: 25px;
       box-sizing: border-box;
     }
@@ -163,7 +163,32 @@
       text-align: center;
       padding-top: 25px;
     }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution a { 
+      color: hsl(228, 45%, 44%); 
+    }
+
+    @media (max-width: 640px) {
+      .container-card {
+        height: 580px;
+        width: 90%;
+      }
+      .card {
+        padding: 10px 28px;
+      }
+      .card-info > p {
+        line-height: 24px;
+      }
+      .card-plan {
+        height: 90px;
+      }
+      .card-info {
+        padding: 16px;
+      }
+      .card-buttons {
+        justify-content: space-between;
+        padding-top: 32px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -199,7 +224,7 @@
     </div>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Imanol Estevez</a>.
+      Coded by <a href="https://www.instagram.com/imanol.aa/">Imanol Estevez</a>.
     </div>
   </div>
    
